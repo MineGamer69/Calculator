@@ -6,7 +6,7 @@ public class calculator{
         int num1 = inp.nextInt();
         System.out.println("Enter 2nd Number: ");
         int num2 = inp.nextInt();
-        System.out.println("Would you like to 1) Add 2) Subtract");
+        System.out.println("Would you like to 1) Add 2) Subtract 3) Multiply 4) Divide");
         int option = inp.nextInt();
 
         if(option == 1){
@@ -16,6 +16,14 @@ public class calculator{
         if(option == 2){
             int subSum = num1 - num2;
             System.out.println("Result = " + subSum);
+        }
+        if(option == 3){
+            int multiSum = num1 * num2;
+            System.out.println("Result = " + multiSum);
+        }
+        if(option == 4){
+            float divSum = (float)num1 / num2;
+            System.out.println("Result = " + divSum);
         }
     }
 }
