@@ -1,3 +1,4 @@
+import java.text.BreakIterator;
 import java.util.Scanner;
 public class calculator{
     public static void main(String[] args){
@@ -21,9 +22,17 @@ public class calculator{
             float multiSum = (float)num1 * num2;
             System.out.println("Result = " + multiSum);
         }
+        
         if(option == 4){
+            if(num2 == 0){
+                System.out.println("Error: Divide By Zero");
+                System.exit(0);
+            }
             float divSum = (float)num1 / num2;
             System.out.println("Result = " + divSum);
         }
+        
+        
+        
     }
 }
